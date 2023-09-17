@@ -14,7 +14,7 @@ public class MemberDriverLicenseConfiguration : IEntityTypeConfiguration<MemberD
         builder.Property(i => i.CreatedBy).IsRequired();
         builder.HasOne<Member>(i => i.Member).WithMany(i => i.MemberDriverLicenses).
             HasForeignKey(i => i.MemberId);
-        builder.HasOne<DriverLicanse>(i => i.DriverLicanse).WithMany(i => i.MemberDriverLicenses).
+        builder.HasOne<DriverLicense>(i => i.DriverLicense).WithMany(i => i.MemberDriverLicenses).
             HasForeignKey(i => i.LicenseId);
     }
 }

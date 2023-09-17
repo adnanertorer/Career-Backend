@@ -6,5 +6,5 @@ public class MemberDriverLicense:BaseModel
     public int MemberId { get; set; }
     
     public Member Member { get; set; }
-    public DriverLicanse DriverLicanse { get; set; }
+    public DriverLicense DriverLicense { get; set; }
 }

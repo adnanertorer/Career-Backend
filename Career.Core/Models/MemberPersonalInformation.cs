@@ -13,6 +13,6 @@ public class MemberPersonalInformation:BaseModel
     
     public Member Member { get; set; }
     public GenderType GenderType { get; set; }
-    public DriverLicanse? DriverLicanse { get; set; }
+    public DriverLicense? DriverLicense { get; set; }
     
 }

@@ -3,7 +3,8 @@
 public class AdminUser:BaseModel
 {
     public string Email { get; set; } = null!;
-    public string Password { get; set; }= null!;
+    public string? Password { get; set; }
+    public string? PasswordSalt { get; set; }
     public string Name { get; set; }= null!;
     public string Surname { get; set; }= null!;
     public bool IsActive { get; set; } 
