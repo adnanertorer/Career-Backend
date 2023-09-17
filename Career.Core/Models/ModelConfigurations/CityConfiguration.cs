@@ -9,5 +9,7 @@ public class CityConfiguration : IEntityTypeConfiguration<City>
     {
         builder.HasKey(i => i.Id);
         builder.Property(i => i.CityName).IsRequired().HasMaxLength(50);
+        builder.Property(i => i.CreatedAt).IsRequired();
+        builder.Property(i => i.CreatedBy).IsRequired();
     }
 }

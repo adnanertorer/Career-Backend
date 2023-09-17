@@ -1,8 +1,7 @@
 ﻿namespace Career.Core.Models;
 
-public class City
+public class City: BaseModel
 {
-    public int Id { get; set; }
     public string CityName { get; set; } = null!;
     
     public ICollection<Member> Members { get; set; }
