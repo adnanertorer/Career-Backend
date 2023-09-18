@@ -12,7 +12,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Career.BusinessLayer\Career.BusinessLayer.csproj" />
       <ProjectReference Include="..\Career.Core\Career.Core.csproj" />
     </ItemGroup>
 

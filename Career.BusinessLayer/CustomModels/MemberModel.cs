@@ -8,6 +8,7 @@ public class MemberModel
     public string Phone { get; set; } = null!;
     public string Email { get; set; } = null!;
     public string Password { get; set; } = null!;
+    public string PasswordSalt { get; set; } = null!;
     public bool IsActive { get; set; } = true;
     public string? RefreshToken { get; set; }
     public DateTime? RefreshTokenEndDate { get; set; }

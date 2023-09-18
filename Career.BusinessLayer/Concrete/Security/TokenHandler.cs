@@ -4,10 +4,11 @@ using System.Security.Cryptography;
 using Career.BusinessLayer.Abstracts.Repositories.UserRepositories;
 using Career.BusinessLayer.Abstracts.UnitOfWork;
 using Career.Core.Models;
+using Career.Identity;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Career.Identity;
+namespace Career.BusinessLayer.Concrete.Security;
 
 public class TokenHandler:ITokenHandler
 {

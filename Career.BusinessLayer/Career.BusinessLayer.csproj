@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Career.Core\Career.Core.csproj" />
+      <ProjectReference Include="..\Career.Identity\Career.Identity.csproj" />
     </ItemGroup>
 
     <ItemGroup>

@@ -10,7 +10,8 @@ public class MemberConfiguration:IEntityTypeConfiguration<Member>
          builder.HasKey(i => i.Id);
          builder.Property(i => i.Address).IsRequired().HasMaxLength(255);
          builder.Property(i => i.Phone).IsRequired().HasMaxLength(20);
-         builder.Property(i => i.Password).IsRequired().HasMaxLength(50);
+         builder.Property(i => i.Password).IsRequired().HasMaxLength(64);
+         builder.Property(i => i.PasswordSalt).HasMaxLength(64);
          builder.Property(i => i.Surname).IsRequired().HasMaxLength(50);
          builder.Property(i => i.Email).IsRequired().HasMaxLength(50);
          builder.Property(i => i.Graduation).IsRequired();
